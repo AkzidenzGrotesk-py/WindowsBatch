@@ -5,3 +5,5 @@
 
 ## Individual File Descriptions
 This area will have small descriptions for individual files.
+
+- [**projectbase.bat**](https://github.com/AkzidenzGrotesk-py/WindowsBatch/blob/main/projectbase.bat) A good base file to start with when using batch to program.
