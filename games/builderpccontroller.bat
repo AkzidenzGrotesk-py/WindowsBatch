@@ -62,7 +62,6 @@ for /l %%y in (0,1,%height%) do (
 :: Controls and Collision
 
 set /a choice=7
-set /a facing=1
 set /a hull_check=0
 choice /c WASDEX /n /m ""
 
@@ -77,22 +76,18 @@ set /a hull_classic=(!hulls!+1)
 if %choice% equ 1 if %player_y% gtr 0 for /l %%h in (0,1,!hulls!) do if !hull_x[%%h]! equ !player_x! if !hull_y[%%h]! equ %minus_y% set /a hull_check=1
 if %choice% equ 1 if %player_y% gtr 0 if !hull_check! equ 0 set /a player_y=(!player_y!-1)
 if %choice% equ 1 set player=A 
-if %choice% equ 1 set /a facing=1
 
 if %choice% equ 3 if %player_y% lss %height% for /l %%h in (0,1,!hulls!) do if !hull_x[%%h]! equ !player_x! if !hull_y[%%h]! equ %plus_y% set /a hull_check=1
 if %choice% equ 3 if %player_y% lss %height% if !hull_check! equ 0 set /a player_y=(!player_y!+1)
 if %choice% equ 3 set player=v 
-if %choice% equ 3 set /a facing=2
 
 if %choice% equ 2 if %player_x% gtr 0 for /l %%h in (0,1,!hulls!) do if !hull_x[%%h]! equ %minus_x% if !hull_y[%%h]! equ !player_y! set /a hull_check=1
 if %choice% equ 2 if %player_x% gtr 0 if !hull_check! equ 0 set /a player_x=(!player_x!-1)
 if %choice% equ 2 set player={ 
-if %choice% equ 2 set /a facing=3
 
 if %choice% equ 4 if %player_x% lss %width% for /l %%h in (0,1,!hulls!) do if !hull_x[%%h]! equ %plus_x% if !hull_y[%%h]! equ !player_y! set /a hull_check=1
 if %choice% equ 4 if %player_x% lss %width% if !hull_check! equ 0 set /a player_x=(!player_x!+1)
 if %choice% equ 4 set player=} 
-if %choice% equ 4 set /a facing=4
 
 if %choice% equ 5 set /a hull_x[%hull_classic%]=!player_x!
 if %choice% equ 5 set /a hull_y[%hull_classic%]=!player_y!
