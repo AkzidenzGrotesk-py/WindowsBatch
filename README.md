@@ -8,6 +8,6 @@ This area will have small descriptions for individual files.
 
 - [**projectbase.bat**](https://github.com/AkzidenzGrotesk-py/WindowsBatch/blob/main/projectbase.bat) A good base file to start with when using batch to program.
 
-### Games
-- [**basicpccontroller**](https://github.com/AkzidenzGrotesk-py/WindowsBatch/blob/main/games/basicpccontroller.bat) A basic player controller using *choice* for controls and *for /l* to generate gridspace. Edit variables *max_x* and *max_y* to increase playing field, larger sizes will create more lag/loading time.
+### WindowsBatch/Games/
+- [**basicpccontroller.bat**](https://github.com/AkzidenzGrotesk-py/WindowsBatch/blob/main/games/basicpccontroller.bat) A basic player controller using *choice* for controls and *for /l* to generate gridspace. Edit variables *max_x* and *max_y* to increase playing field, larger sizes will create more lag/loading time.
 Works by generating a grid using *for /l* (equivalent to python *for x in range(start, step, end)*), if the x/y of the current grid element is equal to the *playerX* and *playerY* it places a character representing the player. Else, it places an empty character. These icons can be changed by modifing the variables: *empty_char* and *marker*. (do note both of these have spaces after them to add a little bit of padding to make the screen easier to look at.)
