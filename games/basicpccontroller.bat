@@ -11,8 +11,8 @@ set /a min_y=1
 set /a playerX=5
 set /a playerY=5
 set grid=
-set empty_char=. 
-set marker=P 
+set "empty_char=. "
+set "marker=P "
 
 
 :gameloop
