@@ -22,6 +22,11 @@ Things built with a combination of batch and other programming languages.
 
 - [**/hybrid/connect/**](https://github.com/AkzidenzGrotesk-py/WindowsBatch/tree/main/hybrid/connect) A Python/Batch hybrid program that allows a batch program to append data to a file on a server. *server.py* and *serverdata.py* should be placed in a server somewhere. Call that server and the folder of those files (they should share a directory) in the *server* input variable in the batch file. This uses *curl* to get the website and post data under the **dat** post. That data is written to a file by the python file. This a terribly insecure and stupid way of doing this. But, fun nonetheless.
 
+### /misc/
+Miscellaneous tidbits.
+
+- [**/misc/keyboardinput.bat + keyboardreader.bat + input.dat**](https://github.com/AkzidenzGrotesk-py/WindowsBatch/blob/main/misc/keyboardinput.bat) A combination of keyboard stroke readers. *keyboardinput.bat* reads input with *choice* and outputs the last one to *input.dat*. *keyboardreader.bat* is some sample code to utilize this in your tools. This is not a great for several reasons (which will be fixed sometime later): works in a snake controller like manner (just shows last keystroke, making it hard for single outputs), requires *keyboardinput.bat* to be started/called (depends on this CMD file), requires focus on *keyboardinput.bat* and more. Possible solution would be to use a combination of *keyboard* (Python) and batch.
+
 ## Using My Programs
 Hey, I make a lot of stuff, and there are definitly other people who have come up with the same solutions to problems like mine. You don't need to credit me when using my files in examples or just a fun thing to look at. But, don't claim you made it... Because you didn't. You can credit me if you feel like it, but I'm not going to go after you if you don't credit me.
 
